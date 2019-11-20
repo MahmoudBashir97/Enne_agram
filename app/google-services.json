@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "961880417736",
+    "firebase_url": "https://enneagram-9cf81.firebaseio.com",
+    "project_id": "enneagram-9cf81",
+    "storage_bucket": "enneagram-9cf81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961880417736:android:228cf44747859abd018cfd",
+        "android_client_info": {
+          "package_name": "com.example.enneadram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961880417736-p38n6n73odlb9jc4ndadcjfdl9rmqoe7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enneadram",
+            "certificate_hash": "f6f0330153c80be4f6a659c6430f64ce443e6d7a"
+          }
+        },
+        {
+          "client_id": "961880417736-cbub47hkcd68fnl85mn5s160q690vimn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5tR37aDegGMUFSIg_ikA-B0MIm_xqRZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961880417736-cbub47hkcd68fnl85mn5s160q690vimn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

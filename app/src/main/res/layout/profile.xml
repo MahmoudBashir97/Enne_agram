@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9FAF9">
+    <RelativeLayout
+        android:id="@+id/slide_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        >
+        <View
+            android:id="@+id/vvv"
+            android:layout_width="13dp"
+            android:layout_height="160dp"
+            android:background="#CE4A3B"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@+id/vvv"
+            android:background="#FFFFFF">
+            <TextView
+                android:id="@+id/slide_Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Which movie character are you?"
+                android:textSize="15sp"
+                android:textColor="#CE4A3B"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/slide_desc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/slide_Q"
+                android:layout_marginTop="15dp"
+                android:text="You will see yourself when you watch the 127 hours movie of the real life story of Aaron Ralston, who is keen on having fun and adventure!"
+                android:textSize="13sp"
+                android:textColor="#5C5C5C"
+                android:textStyle="normal"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/lin"
+
+                />
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:id="@+id/v1"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"
+                    />
+                <ImageView
+                    android:id="@+id/v2"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v3"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v4"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"
+                    />
+                <ImageView
+                    android:id="@+id/v5"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v6"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v7"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"
+                    />
+                <ImageView
+                    android:id="@+id/v8"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v9"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"/>
+                <ImageView
+                    android:id="@+id/v10"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/negat_back"
+                    android:layout_margin="2dp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

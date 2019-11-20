@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EnneagramFragment"
+    android:background="#FAFAFA">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FEFEFE"
+        android:id="@+id/rell"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enneagram"
+            android:textSize="18sp"
+            android:textColor="#CE4A3B"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="29dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#AFAFAF"
+        android:layout_below="@+id/rell"/>
+
+    <RelativeLayout
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/cardiv_bck"
+        >
+
+        <TextView
+            android:id="@+id/txt_Enn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is Enneagram?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#5C5C5C"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            />
+
+        <TextView
+            android:id="@+id/Enn_define"
+            android:layout_width="309dp"
+            android:layout_height="195dp"
+            android:layout_below="@+id/txt_Enn"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="MM"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="8dp"
+            />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

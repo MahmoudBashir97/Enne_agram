@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp">
+
+        <View
+            android:id="@+id/Viw_1"
+            android:layout_below="@+id/txt_finish"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CE4A3B"
+            android:layout_marginTop="12dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/Next_btn">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/checkmark_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="Meticulous and organized"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+               />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_1"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I adhere strictly to my principles"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_2"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I’m planned and detailed"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+
+                <ToggleButton
+                    android:id="@+id/ch_3"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I’m sensitive in my responsibilities"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_4"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="My standards are very high"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_5"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I act moderately"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_6"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I think carefully"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_7"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="I am critical and judgmental"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_8"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Next_btn"
+        android:layout_width="330dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/peace_back"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>
