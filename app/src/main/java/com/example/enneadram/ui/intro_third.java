@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,6 +60,8 @@ public class intro_third extends AppCompatActivity {
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
             } else {
+
+                Toast.makeText(this, "Please Check your Internet Connection.", Toast.LENGTH_SHORT).show();
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
 

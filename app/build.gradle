@@ -12,6 +12,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
     }
     buildTypes {
         release {
@@ -24,6 +28,7 @@ android {
         targetCompatibility = '1.8'
     }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -39,6 +44,7 @@ dependencies {
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.5'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.android.billingclient:billing:2.0.3'
+
 
     implementation 'com.google.android.gms:play-services-ads:18.3.0'
     implementation 'com.google.firebase:firebase-ads:18.3.0'

@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.android.billingclient.api.BillingClient;
 import com.example.enneadram.Adapters.view_pager_adpt;
 import com.example.enneadram.Fragments.EnneagramFragment;
 import com.example.enneadram.Fragments.ProfileFragment;
@@ -39,6 +40,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
     String type="";
 
     public AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -68,11 +68,16 @@ public class Question_4_Activity extends AppCompatActivity {
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
             } else {
+
                 Intent intent=new Intent(Question_4_Activity.this, Question_5_Activity.class);
+
                 intent.putExtra("points",points+"");
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
+
+                //Toast.makeText(this, "Please Check your Internet Connection.", Toast.LENGTH_SHORT).show();
+
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
         });

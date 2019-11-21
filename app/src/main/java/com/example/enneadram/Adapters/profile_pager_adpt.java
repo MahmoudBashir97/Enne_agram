@@ -8,18 +8,29 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.android.billingclient.api.AcknowledgePurchaseResponseListener;
 import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
+import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.Purchase;
+import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
+import com.android.billingclient.api.SkuDetailsParams;
+import com.android.billingclient.api.SkuDetailsResponseListener;
+import com.example.enneadram.Billing.Billing_inapp;
 import com.example.enneadram.R;
 
+import java.util.Arrays;
 import java.util.List;
 
-public class profile_pager_adpt extends PagerAdapter {
+public class profile_pager_adpt extends PagerAdapter  {
 
     Context context;
     LayoutInflater layoutInflater;
@@ -190,15 +201,32 @@ public class profile_pager_adpt extends PagerAdapter {
         v9=v.findViewById(R.id.v9);
         v10=v.findViewById(R.id.v10);
 
-/*
 
-        BillingFlowParams billingFlowParams=BillingFlowParams.newBuilder()
-                .setSkuDetails(skuDetails.get(position))
-                .build();
 
-        billingClient.launchBillingFlow((Activity) context.getApplicationContext(),billingFlowParams);
+
+
+
+     /*   if (billingClient.isReady()){
+            SkuDetailsParams params=SkuDetailsParams.newBuilder()
+                    .setSkusList(Arrays.asList("slide_1.99"))
+                    .setType(BillingClient.SkuType.INAPP)
+                    .build();
+
+            billingClient.querySkuDetailsAsync(params, new SkuDetailsResponseListener() {
+                @Override
+                public void onSkuDetailsResponse(BillingResult billingResult, List<SkuDetails> skuDetailsList) {
+                    if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                        Toast.makeText(context, "Go on...", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
 */
-           if (position==0) {
+
+
+
+
+        if (position==0) {
                v1.setImageResource(R.drawable.peace_back);
 
                v2.setImageResource(R.drawable.negat_back);
@@ -220,6 +248,16 @@ public class profile_pager_adpt extends PagerAdapter {
 
 
            }else if (position==1){
+
+
+/*
+               BillingFlowParams billingFlowParams=BillingFlowParams.newBuilder()
+                       .setSkuDetails(skuDetails.get(position))
+                       .build();
+
+               billingClient.launchBillingFlow((Activity) context.getApplicationContext(),billingFlowParams);*/
+
+
                v1.setImageResource(R.drawable.peace_back);
 
                v2.setImageResource(R.drawable.negat_back);
@@ -365,4 +403,7 @@ public class profile_pager_adpt extends PagerAdapter {
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
         container.removeView((RelativeLayout)object);
     }
+
+
+
 }

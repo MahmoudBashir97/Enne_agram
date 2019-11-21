@@ -27,9 +27,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class SettingsFragment extends Fragment {
     View v;
     Button retest_btn;
@@ -39,7 +36,6 @@ public class SettingsFragment extends Fragment {
     public SettingsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,9 +63,8 @@ public class SettingsFragment extends Fragment {
             startActivity(Intent.createChooser(sendIntent, "Share app via"));
         });
         Relat_rate.setOnClickListener(view -> {
-            showRateDialogForRate(getContext());
+            rateMe(view);
         });
-
 
 
         retest_btn.setOnClickListener(view -> {
@@ -81,6 +76,8 @@ public class SettingsFragment extends Fragment {
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
         });
+
+
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -96,35 +93,14 @@ public class SettingsFragment extends Fragment {
 
         return v;
     }
-    public static void showRateDialogForRate(final Context context) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context)
-                .setTitle("Rate application")
-                .setMessage("Please, rate the app at PlayMarket")
-                .setPositiveButton("RATE", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        if (context != null) {
-                            ////////////////////////////////
-                            Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
-                            Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-                            // To count with Play market backstack, After pressing back button,
-                            // to taken back to our application, we need to add following flags to intent.
-                            goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
-                                    Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET |
-                                    Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-                            try {
-                                context.startActivity(goToMarket);
-                            } catch (ActivityNotFoundException e) {
-                                context.startActivity(new Intent(Intent.ACTION_VIEW,
-                                        Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
-                            }
 
-
-                        }
-                    }
-                })
-                .setNegativeButton("CANCEL", null);
-        builder.show();
+    public void rateMe(View view) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" +getContext().getPackageName() )));
+        } catch (android.content.ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://play.google.com/store/apps/details?id=" + getContext().getPackageName())));
+        }
     }
-
 }

@@ -25,7 +25,9 @@ import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
+import com.android.billingclient.api.SkuDetailsResponseListener;
 import com.example.enneadram.Adapters.profile_pager_adpt;
+import com.example.enneadram.Billing.Billing_inapp;
 import com.example.enneadram.R;
 import com.example.enneadram.ui.Crush_types;
 
@@ -134,7 +136,7 @@ public class ProfileFragment extends Fragment {
             sendIntent.putExtra(Intent.EXTRA_TEXT, "Share this App with");
             startActivity(Intent.createChooser(sendIntent, "Share app via"));
         });
-
+        //setupBillingClient();
 
         Kind_type();
 
@@ -149,6 +151,8 @@ public class ProfileFragment extends Fragment {
     private void Questions_view(){
        next_btn.setOnClickListener(view -> {
 
+           Billing_inapp billing_inapp=new Billing_inapp();
+           billing_inapp.setupBilling("slide_1.99", getContext());
            Intent intent=new Intent(getContext(), Crush_types.class);
            intent.putExtra("C1",""+cruchT_1);
            intent.putExtra("C2",""+cruchT_2);
@@ -235,4 +239,34 @@ public class ProfileFragment extends Fragment {
         }
     }
 
+   /* private void setupBillingClient(){
+        billingClient=BillingClient.newBuilder(this).setListener(this).build();
+        billingClient.startConnection(new BillingClientStateListener() {
+            @Override
+            public void onBillingSetupFinished(BillingResult billingResult) {
+                if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                    // The BillingClient is ready. You can query purchases here.
+
+                    Toast.makeText(getContext(), "Success to connect Billing", Toast.LENGTH_SHORT).show();
+                }else
+                    Toast.makeText(getContext(), ""+billingResult.getResponseCode(), Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onBillingServiceDisconnected() {
+
+                Toast.makeText(getContext(), "You are disconnect from Billing", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onPurchasesUpdated(BillingResult billingResult, @Nullable List<Purchase> purchases) {
+        Toast.makeText(getContext(), "purchase item : "+purchases.size(), Toast.LENGTH_SHORT).show();
+
+    }*/
 }
