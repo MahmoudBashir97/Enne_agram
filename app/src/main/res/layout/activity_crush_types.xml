@@ -33,8 +33,8 @@
 
     <RelativeLayout
         android:id="@+id/type1"
-        android:layout_width="346dp"
-        android:layout_height="93dp"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
         android:background="@drawable/rectangle_18"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -44,24 +44,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type 1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="#4A4A4A"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtDesc_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious,\n
+        sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="1dp"
+            android:layout_below="@+id/txt_1"
+            android:layout_toRightOf="@+id/img_1"
+            android:gravity="center"
+            />
         <ImageView
             android:id="@+id/img_1"
             android:layout_width="61dp"
             android:layout_height="61dp"
             android:src="@drawable/tip1"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="10dp"
             />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/type2"
-        android:layout_width="346dp"
-        android:layout_height="93dp"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
         android:background="@drawable/rectangle_18"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -71,23 +88,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type 2"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="#4A4A4A"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDesc_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious,\n
+        sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="1dp"
+            android:layout_below="@+id/txt_2"
+            android:layout_toRightOf="@+id/img_2"
+            android:gravity="center"
+            />
+
         <ImageView
             android:id="@+id/img_2"
             android:layout_width="61dp"
             android:layout_height="61dp"
             android:src="@drawable/tip2"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="10dp"
             />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="346dp"
-        android:layout_height="93dp"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
         android:background="@drawable/rectangle_18"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -97,19 +133,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type 2"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="#4A4A4A"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDesc_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious,\n
+        sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="1dp"
+            android:layout_below="@+id/txt_3"
+            android:layout_toRightOf="@+id/img_3"
+            android:gravity="center"
+            />
         <ImageView
             android:id="@+id/img_3"
             android:layout_width="61dp"
             android:layout_height="61dp"
             android:src="@drawable/tip2"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="10dp"
             />
     </RelativeLayout>
-
-
 </RelativeLayout>

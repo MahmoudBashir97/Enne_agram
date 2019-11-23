@@ -241,7 +241,7 @@ public class profile_pager_adpt extends PagerAdapter  {
 
 
                slide_Q.setText(lst_mainQ[0]);
-               slide_desc.setText(lst_typesDesc[0]);
+               slide_desc.setText(lst_Desc[0]);
 
 
 
@@ -258,9 +258,9 @@ public class profile_pager_adpt extends PagerAdapter  {
                billingClient.launchBillingFlow((Activity) context.getApplicationContext(),billingFlowParams);*/
 
 
-               v1.setImageResource(R.drawable.peace_back);
+               v2.setImageResource(R.drawable.peace_back);
 
-               v2.setImageResource(R.drawable.negat_back);
+               v1.setImageResource(R.drawable.negat_back);
                v3.setImageResource(R.drawable.negat_back);
                v4.setImageResource(R.drawable.negat_back);
                v5.setImageResource(R.drawable.negat_back);
@@ -271,7 +271,7 @@ public class profile_pager_adpt extends PagerAdapter  {
                v10.setImageResource(R.drawable.negat_back);
 
                slide_Q.setText(lst_mainQ[1]);
-               slide_desc.setText(lst_typesDesc[1]);
+               slide_desc.setText(lst_Desc[1]);
               }else if (position==2){
                v3.setImageResource(R.drawable.peace_back);
 
@@ -287,7 +287,7 @@ public class profile_pager_adpt extends PagerAdapter  {
 
 
                slide_Q.setText(lst_mainQ[2]);
-               slide_desc.setText(lst_typesDesc[2]);
+               slide_desc.setText(lst_Desc[2]);
            }else if (position==3){
                v4.setImageResource(R.drawable.peace_back);
 
@@ -302,7 +302,7 @@ public class profile_pager_adpt extends PagerAdapter  {
                v10.setImageResource(R.drawable.negat_back);
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==4){
                v5.setImageResource(R.drawable.peace_back);
 
@@ -318,7 +318,7 @@ public class profile_pager_adpt extends PagerAdapter  {
 
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==5){
                v6.setImageResource(R.drawable.peace_back);
 
@@ -334,7 +334,7 @@ public class profile_pager_adpt extends PagerAdapter  {
 
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==6){
                v7.setImageResource(R.drawable.peace_back);
 
@@ -348,7 +348,7 @@ public class profile_pager_adpt extends PagerAdapter  {
                v10.setImageResource(R.drawable.negat_back);
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==7){
                v8.setImageResource(R.drawable.peace_back);
 
@@ -363,7 +363,7 @@ public class profile_pager_adpt extends PagerAdapter  {
 
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==8){
                v9.setImageResource(R.drawable.peace_back);
 
@@ -377,7 +377,7 @@ public class profile_pager_adpt extends PagerAdapter  {
                v10.setImageResource(R.drawable.negat_back);
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }else if (position==9){
                v10.setImageResource(R.drawable.peace_back);
 
@@ -391,7 +391,7 @@ public class profile_pager_adpt extends PagerAdapter  {
                v9.setImageResource(R.drawable.negat_back);
 
                slide_Q.setText(lst_mainQ[position]);
-               slide_desc.setText(lst_typesDesc[position]);
+               slide_desc.setText(lst_Desc[position]);
            }
 
         container.addView(v);

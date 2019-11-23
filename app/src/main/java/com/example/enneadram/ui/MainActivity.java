@@ -92,7 +92,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
 
         mainframe=(FrameLayout) findViewById(R.id.main_frame);
         mainnav=(BottomNavigationView) findViewById(R.id.main_nav);
-        mainnav.setSelectedItemId(R.id.nav_profile);
+
         mainnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected( MenuItem item) {
@@ -117,6 +117,8 @@ implements NavigationView.OnNavigationItemSelectedListener {
                 return false;
             }
         });
+
+        mainnav.setSelectedItemId(R.id.nav_profile);
 
     }
 
