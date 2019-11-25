@@ -50,11 +50,11 @@ public class intro_third extends AppCompatActivity {
         String Desc= "What motivates you? What are your \n"+
                 "focuses? How do you improve \n"+
                 "yourself? Finishthe test and get the \n"+
-                "          results!";
+                "    results!";
 
         img_v.setImageResource(R.drawable.papericon);
         txt_1.setText(Quest);
-        txt_2.setText(Desc);
+        //txt_2.setText(Desc);
 
         start_btn.setOnClickListener(view -> {
             if (mInterstitialAd.isLoaded()) {

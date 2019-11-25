@@ -27,13 +27,25 @@
         android:padding="5dp"
         android:orientation="vertical"
         android:layout_above="@+id/Next_btn">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -65,7 +77,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -101,7 +114,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -137,7 +151,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -173,7 +188,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -209,7 +225,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -246,6 +263,7 @@
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
+            android:gravity="center_horizontal"
             >
             <TextView
                 android:layout_width="290dp"
@@ -282,7 +300,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -318,7 +337,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -348,6 +368,8 @@
             </LinearLayout>
 
         </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
     <Button

@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.enneadram.R;
 import com.example.enneadram.ui.MainActivity;
@@ -72,6 +73,7 @@ public class SettingsFragment extends Fragment {
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
             } else {
+                Toast.makeText(getContext(), "Please Check your Internet Connection.", Toast.LENGTH_SHORT).show();
 
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }

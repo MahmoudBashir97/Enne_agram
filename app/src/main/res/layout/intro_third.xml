@@ -42,11 +42,14 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="18dp"
-            android:text="What is enneagram?"
+            android:text="What motivates you? What are your \n
+        focuses? How do you improve \n
+        yourself? Finishthe test and get the\n
+    results!"
             android:textColor="#8A8A8A"
             android:textSize="18sp"
             android:textStyle="normal"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             />
     </RelativeLayout>
 
