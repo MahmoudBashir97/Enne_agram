@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp">
+
+        <View
+            android:id="@+id/Viw_1"
+            android:layout_below="@+id/txt_finish"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CE4A3B"
+            android:layout_marginTop="12dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/Next_btn"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I'm emotional and a little touchy"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_1"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I’m sensitive to the needs of people"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_2"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I’m sincere in my relationships"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_3"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I trust myself"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_4"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I set my target and lock on it"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_5"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I am ambitious and competitive"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_6"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I like to stand out"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_7"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="I care about my image"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_choice"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ch_8"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/toggle_selector_right"
+                    android:background="@drawable/rectangle_choice"
+                    android:textOn=""
+                    android:textOff=""
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Next_btn"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/peace_back"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

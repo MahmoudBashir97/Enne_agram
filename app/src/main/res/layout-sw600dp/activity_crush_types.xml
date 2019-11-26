@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Crush_types"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:id="@+id/rel_crush">
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backbutton"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crush Types"
+            android:textColor="#CE4A3B"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type1"
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:background="@drawable/rectangle_18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rel_crush">
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type 1"
+            android:textSize="20sp"
+            android:textColor="#4A4A4A"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtDesc_1"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious, sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="1dp"
+            android:layout_below="@+id/txt_1"
+            android:layout_toRightOf="@+id/img_1"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tip1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type2"
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:background="@drawable/rectangle_18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/type1">
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type 2"
+            android:textSize="20sp"
+            android:textColor="#4A4A4A"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDesc_2"
+            android:layout_width="339dp"
+            android:layout_height="112dp"
+            android:layout_below="@+id/txt_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/img_2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious, sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tip2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:background="@drawable/rectangle_18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/type2">
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type 2"
+            android:textSize="20sp"
+            android:textColor="#4A4A4A"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDesc_3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="You are a serious, prince some, idealistic, rational.\n
+        You do a job in full and in accordance, you are serious, sensible and controlling, responsive in responsibilities,\n
+        You are regular and rigorous, self-disciplined,\n restrained."
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="1dp"
+            android:layout_below="@+id/txt_3"
+            android:layout_toRightOf="@+id/img_3"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tip2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
