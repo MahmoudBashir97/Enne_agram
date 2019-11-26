@@ -40,6 +40,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
     String type="";
 
     public AdView mAdView;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,14 +83,21 @@ implements NavigationView.OnNavigationItemSelectedListener {
             }
         });
 
+
+
         //receive sum of grade points from previous checkbox
         intentvalue=getIntent().getStringExtra("points");
        // points= Integer.parseInt(intentvalue);
         points= Integer.parseInt(SharedPrefranceManager.getInastance(this).getPoints());
 
+        if (savedInstanceState != null){
+            points = Integer.parseInt(savedInstanceState.getString("points"));
+        }
+
         check_types();
 
-
+        bundle = new Bundle();
+        bundle.putString("type", type);
         mainframe=(FrameLayout) findViewById(R.id.main_frame);
         mainnav=(BottomNavigationView) findViewById(R.id.main_nav);
 
@@ -104,8 +112,8 @@ implements NavigationView.OnNavigationItemSelectedListener {
                         setFragment(frag);
                         return true;
                     case R.id.nav_profile:
-
-                        frag=new ProfileFragment(type);
+                        frag=new ProfileFragment();
+                        frag.setArguments(bundle);
                         setFragment(frag);
                         return true;
                     case R.id.nav_settings:
@@ -169,5 +177,22 @@ implements NavigationView.OnNavigationItemSelectedListener {
         }else if (points>=44 && points<=49){
             type="Type-8";
         }
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putString("points", SharedPrefranceManager.getInastance(this).getPoints());
+        outState.putString("type",type);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        points= Integer.parseInt(savedInstanceState.getString("points"));
+        type=savedInstanceState.getString("type");
+
     }
 }

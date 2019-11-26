@@ -1,9 +1,11 @@
 package com.example.enneadram.Fragments;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -37,7 +39,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProfileFragment extends Fragment {
+public  class  ProfileFragment extends Fragment {
 
     View v;
     private ViewPager prof_pager;
@@ -49,12 +51,13 @@ public class ProfileFragment extends Fragment {
 
      TextView side_type_text,txt_desc,slide_type,txt_type;
      int cruchT_1,cruchT_2,cruchT_3;
-     String type;
+     String type,state;
 
      BillingClient billingClient;
-    public ProfileFragment(String type) {
+
+    @SuppressLint("ValidFragment")
+    public ProfileFragment() {
         // Required empty public constructor
-        this.type=type;
     }
     public String[] lst_Desc_types={
             "You are a serious, prince some, idealistic, rational, and a perfectionist.\n" +
@@ -127,6 +130,11 @@ public class ProfileFragment extends Fragment {
         side_type_text=v.findViewById(R.id.side_type_text);
         share_btn=v.findViewById(R.id.share_btn);
 
+        type=getArguments().getString("type");
+
+        if (savedInstanceState !=null){
+            state=savedInstanceState.getString("state");
+        }
 
         //to share this app with friends with link google play
         share_btn.setOnClickListener(view -> {
@@ -239,7 +247,8 @@ public class ProfileFragment extends Fragment {
         }
     }
 
-   /* private void setupBillingClient(){
+
+    /* private void setupBillingClient(){
         billingClient=BillingClient.newBuilder(this).setListener(this).build();
         billingClient.startConnection(new BillingClientStateListener() {
             @Override
