@@ -7,8 +7,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="35dp">
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish the Test"
+            android:textSize="22sp"
+            android:textColor="#CE4A3B"
+            android:layout_centerHorizontal="true"
+            />
+
         <View
             android:id="@+id/Viw_1"
             android:layout_below="@+id/txt_finish"
@@ -16,6 +26,20 @@
             android:layout_height="1dp"
             android:background="#CE4A3B"
             android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/Viw_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" This part includes senteces that will determine your personality.\n Select the options that best describes you."
+            android:textSize="14sp"
+            android:textColor="#CE4A3B"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
             />
     </RelativeLayout>
     <LinearLayout
